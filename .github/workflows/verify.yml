@@ -1,0 +1,13 @@
+name: verify
+
+on: [push, pull_request]
+
+jobs:
+  rtl-checks:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Icarus Verilog, Verilator and Yosys
+        run: sudo apt-get update && sudo apt-get install -y iverilog verilator yosys
+      - name: Lint, simulation, mutation check, synthesis, gate-level simulation
+        run: make verify
