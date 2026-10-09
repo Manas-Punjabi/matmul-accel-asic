@@ -1,0 +1,21 @@
+# Post-layout gate-level simulation of the routed netlist, run 2026-09-19
+# Netlists: routed netlists of the base and p8_split flow runs (ORFS 26Q3-589, final flow settings)
+# Cell models: SKY130 sky130_fd_sc_hd, PDK c6d73a35; simulator: Icarus Verilog 12.0
+# Delays: SDF written by OpenSTA at the typical corner (15 MB; regenerated, not stored)
+#
+# Functional (cell models without delays), same testbench as the RTL and gate-level runs:
+GLS-sky130 base: PASS: 489 checks, N=4 DW=32 SPLIT_MUL=0
+GLS-sky130 p8_split: PASS: 489 checks, N=4 DW=32 SPLIT_MUL=1
+#
+# With back-annotated delays (delays applied; Icarus performs no setup/hold checks,
+# see docs/verification.md), base netlist:
+GLS-sky130+SDF base @12ns: PASS: 489 checks, N=4 DW=32 SPLIT_MUL=0
+GLS-sky130+SDF base @10ns: PASS: 489 checks, N=4 DW=32 SPLIT_MUL=0
+GLS-sky130+SDF base @8ns:  PASS: 489 checks, N=4 DW=32 SPLIT_MUL=0
+GLS-sky130+SDF base @6ns:  FAIL: 381 errors / 489 checks
+#
+# Commands (WORK_HOME = the flow output folder):
+#   make gls-sky130 WORK_HOME=$WORK_HOME FLOW_VARIANT=base
+#   make gls-sky130 WORK_HOME=$WORK_HOME FLOW_VARIANT=p8_split SPLIT_MUL=1
+#   make gls-sky130 WORK_HOME=$WORK_HOME FLOW_VARIANT=base SDF=build/mm_accel_base_tt.sdf HALF_PERIOD=6 RD_SETTLE=7
+#   make gls-sky130 WORK_HOME=$WORK_HOME FLOW_VARIANT=base SDF=build/mm_accel_base_tt.sdf HALF_PERIOD=3 RD_SETTLE=5

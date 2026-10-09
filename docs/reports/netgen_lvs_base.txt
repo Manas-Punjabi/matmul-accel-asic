@@ -1,0 +1,230 @@
+# Layout versus schematic (Netgen 1.5.323, SKY130 PDK c6d73a35 setup), run 2026-09-19.
+# Layout side: transistor netlist extracted by Magic from the final GDS.
+# Schematic side: gate netlist with power pins, written by OpenROAD from the final database.
+# The full log was 2,578 lines; this copy keeps the summary and the verdict.
+
+Subcircuit summary:
+Circuit 1: mm_accel                        |Circuit 2: mm_accel                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__and2_1 (8081)             |sky130_fd_sc_hd__and2_1 (8081)             
+sky130_fd_sc_hd__fa_1 (6776)               |sky130_fd_sc_hd__fa_1 (6776)               
+sky130_fd_sc_hd__clkbuf_1 (67)             |sky130_fd_sc_hd__clkbuf_1 (67)             
+sky130_fd_sc_hd__clkbuf_16 (339)           |sky130_fd_sc_hd__clkbuf_16 (339)           
+sky130_fd_sc_hd__diode_2 (417->142)        |sky130_fd_sc_hd__diode_2 (417->142)        
+sky130_fd_sc_hd__o21ai_0 (338)             |sky130_fd_sc_hd__o21ai_0 (338)             
+sky130_fd_sc_hd__nor2_1 (300)              |sky130_fd_sc_hd__nor2_1 (300)              
+sky130_fd_sc_hd__ha_1 (2101)               |sky130_fd_sc_hd__ha_1 (2101)               
+sky130_fd_sc_hd__or2_2 (19)                |sky130_fd_sc_hd__or2_2 (19)                
+sky130_fd_sc_hd__clkinv_1 (16)             |sky130_fd_sc_hd__clkinv_1 (16)             
+sky130_fd_sc_hd__nand2_1 (3650)            |sky130_fd_sc_hd__nand2_1 (3650)            
+sky130_fd_sc_hd__buf_4 (198)               |sky130_fd_sc_hd__buf_4 (198)               
+sky130_fd_sc_hd__xnor2_1 (1151)            |sky130_fd_sc_hd__xnor2_1 (1151)            
+sky130_fd_sc_hd__edfxtp_1 (1536)           |sky130_fd_sc_hd__edfxtp_1 (1536)           
+sky130_fd_sc_hd__inv_16 (6)                |sky130_fd_sc_hd__inv_16 (6)                
+sky130_fd_sc_hd__mux4_2 (288)              |sky130_fd_sc_hd__mux4_2 (288)              
+sky130_fd_sc_hd__xor2_1 (303)              |sky130_fd_sc_hd__xor2_1 (303)              
+sky130_fd_sc_hd__dfxtp_1 (1228)            |sky130_fd_sc_hd__dfxtp_1 (1228)            
+sky130_fd_sc_hd__a32o_1 (1)                |sky130_fd_sc_hd__a32o_1 (1)                
+sky130_fd_sc_hd__a21o_1 (190)              |sky130_fd_sc_hd__a21o_1 (190)              
+sky130_fd_sc_hd__a31oi_1 (37)              |sky130_fd_sc_hd__a31oi_1 (37)              
+sky130_fd_sc_hd__a211o_1 (15)              |sky130_fd_sc_hd__a211o_1 (15)              
+sky130_fd_sc_hd__o21a_1 (97)               |sky130_fd_sc_hd__o21a_1 (97)               
+sky130_fd_sc_hd__mux2_2 (288)              |sky130_fd_sc_hd__mux2_2 (288)              
+sky130_fd_sc_hd__nand3_1 (80)              |sky130_fd_sc_hd__nand3_1 (80)              
+sky130_fd_sc_hd__buf_2 (545)               |sky130_fd_sc_hd__buf_2 (545)               
+sky130_fd_sc_hd__bufinv_16 (27)            |sky130_fd_sc_hd__bufinv_16 (27)            
+sky130_fd_sc_hd__o2111ai_1 (14)            |sky130_fd_sc_hd__o2111ai_1 (14)            
+sky130_fd_sc_hd__o21bai_1 (71)             |sky130_fd_sc_hd__o21bai_1 (71)             
+sky130_fd_sc_hd__nor2b_1 (69)              |sky130_fd_sc_hd__nor2b_1 (69)              
+sky130_fd_sc_hd__clkinvlp_4 (22)           |sky130_fd_sc_hd__clkinvlp_4 (22)           
+sky130_fd_sc_hd__o31ai_1 (24)              |sky130_fd_sc_hd__o31ai_1 (24)              
+sky130_fd_sc_hd__or3_1 (27)                |sky130_fd_sc_hd__or3_1 (27)                
+sky130_fd_sc_hd__a21oi_1 (427)             |sky130_fd_sc_hd__a21oi_1 (427)             
+sky130_fd_sc_hd__inv_1 (134)               |sky130_fd_sc_hd__inv_1 (134)               
+sky130_fd_sc_hd__nor3_1 (90)               |sky130_fd_sc_hd__nor3_1 (90)               
+sky130_fd_sc_hd__o311ai_0 (2)              |sky130_fd_sc_hd__o311ai_0 (2)              
+sky130_fd_sc_hd__a31o_2 (10)               |sky130_fd_sc_hd__a31o_2 (10)               
+sky130_fd_sc_hd__a41oi_1 (10)              |sky130_fd_sc_hd__a41oi_1 (10)              
+sky130_fd_sc_hd__xnor2_2 (30)              |sky130_fd_sc_hd__xnor2_2 (30)              
+sky130_fd_sc_hd__clkbuf_8 (42)             |sky130_fd_sc_hd__clkbuf_8 (42)             
+sky130_fd_sc_hd__o211ai_1 (24)             |sky130_fd_sc_hd__o211ai_1 (24)             
+sky130_fd_sc_hd__o2111a_1 (3)              |sky130_fd_sc_hd__o2111a_1 (3)              
+sky130_fd_sc_hd__clkinv_8 (2)              |sky130_fd_sc_hd__clkinv_8 (2)              
+sky130_fd_sc_hd__and3_1 (38)               |sky130_fd_sc_hd__and3_1 (38)               
+sky130_fd_sc_hd__a211oi_2 (1)              |sky130_fd_sc_hd__a211oi_2 (1)              
+sky130_fd_sc_hd__o221a_2 (1)               |sky130_fd_sc_hd__o221a_2 (1)               
+sky130_fd_sc_hd__a22o_1 (5)                |sky130_fd_sc_hd__a22o_1 (5)                
+sky130_fd_sc_hd__a21oi_2 (2)               |sky130_fd_sc_hd__a21oi_2 (2)               
+sky130_fd_sc_hd__clkdlybuf4s25_1 (45)      |sky130_fd_sc_hd__clkdlybuf4s25_1 (45)      
+sky130_fd_sc_hd__o41a_1 (5)                |sky130_fd_sc_hd__o41a_1 (5)                
+sky130_fd_sc_hd__a311o_1 (5)               |sky130_fd_sc_hd__a311o_1 (5)               
+sky130_fd_sc_hd__nand4b_1 (2)              |sky130_fd_sc_hd__nand4b_1 (2)              
+sky130_fd_sc_hd__clkinv_4 (17)             |sky130_fd_sc_hd__clkinv_4 (17)             
+sky130_fd_sc_hd__or4b_2 (1)                |sky130_fd_sc_hd__or4b_2 (1)                
+sky130_fd_sc_hd__inv_8 (6)                 |sky130_fd_sc_hd__inv_8 (6)                 
+sky130_fd_sc_hd__clkinv_16 (15)            |sky130_fd_sc_hd__clkinv_16 (15)            
+sky130_fd_sc_hd__o31a_1 (8)                |sky130_fd_sc_hd__o31a_1 (8)                
+sky130_fd_sc_hd__nand2b_1 (107)            |sky130_fd_sc_hd__nand2b_1 (107)            
+sky130_fd_sc_hd__dfrtp_1 (10)              |sky130_fd_sc_hd__dfrtp_1 (10)              
+sky130_fd_sc_hd__nand4_1 (16)              |sky130_fd_sc_hd__nand4_1 (16)              
+sky130_fd_sc_hd__and3b_1 (1)               |sky130_fd_sc_hd__and3b_1 (1)               
+sky130_fd_sc_hd__o41ai_2 (2)               |sky130_fd_sc_hd__o41ai_2 (2)               
+sky130_fd_sc_hd__clkbuf_4 (1)              |sky130_fd_sc_hd__clkbuf_4 (1)              
+sky130_fd_sc_hd__or4_1 (11)                |sky130_fd_sc_hd__or4_1 (11)                
+sky130_fd_sc_hd__buf_6 (1)                 |sky130_fd_sc_hd__buf_6 (1)                 
+sky130_fd_sc_hd__inv_6 (16)                |sky130_fd_sc_hd__inv_6 (16)                
+sky130_fd_sc_hd__nor4b_1 (1)               |sky130_fd_sc_hd__nor4b_1 (1)               
+sky130_fd_sc_hd__a221oi_2 (1)              |sky130_fd_sc_hd__a221oi_2 (1)              
+sky130_fd_sc_hd__nand2_2 (4)               |sky130_fd_sc_hd__nand2_2 (4)               
+sky130_fd_sc_hd__a21bo_2 (3)               |sky130_fd_sc_hd__a21bo_2 (3)               
+sky130_fd_sc_hd__a31oi_2 (1)               |sky130_fd_sc_hd__a31oi_2 (1)               
+sky130_fd_sc_hd__or2b_1 (1)                |sky130_fd_sc_hd__or2b_1 (1)                
+sky130_fd_sc_hd__dfxtp_2 (59)              |sky130_fd_sc_hd__dfxtp_2 (59)              
+sky130_fd_sc_hd__clkinv_2 (45)             |sky130_fd_sc_hd__clkinv_2 (45)             
+sky130_fd_sc_hd__dfxtp_4 (2)               |sky130_fd_sc_hd__dfxtp_4 (2)               
+sky130_fd_sc_hd__inv_4 (2)                 |sky130_fd_sc_hd__inv_4 (2)                 
+sky130_fd_sc_hd__a41o_1 (8)                |sky130_fd_sc_hd__a41o_1 (8)                
+sky130_fd_sc_hd__o22ai_1 (5)               |sky130_fd_sc_hd__o22ai_1 (5)               
+sky130_fd_sc_hd__a31o_1 (2)                |sky130_fd_sc_hd__a31o_1 (2)                
+sky130_fd_sc_hd__a311oi_1 (4)              |sky130_fd_sc_hd__a311oi_1 (4)              
+sky130_fd_sc_hd__or2_1 (1)                 |sky130_fd_sc_hd__or2_1 (1)                 
+sky130_fd_sc_hd__o221ai_2 (1)              |sky130_fd_sc_hd__o221ai_2 (1)              
+sky130_fd_sc_hd__and3_2 (1)                |sky130_fd_sc_hd__and3_2 (1)                
+sky130_fd_sc_hd__o21ai_1 (5)               |sky130_fd_sc_hd__o21ai_1 (5)               
+sky130_fd_sc_hd__inv_2 (1)                 |sky130_fd_sc_hd__inv_2 (1)                 
+sky130_fd_sc_hd__a21boi_0 (10)             |sky130_fd_sc_hd__a21boi_0 (10)             
+sky130_fd_sc_hd__nand3b_1 (9)              |sky130_fd_sc_hd__nand3b_1 (9)              
+sky130_fd_sc_hd__a2111oi_1 (3)             |sky130_fd_sc_hd__a2111oi_1 (3)             
+sky130_fd_sc_hd__or3b_2 (1)                |sky130_fd_sc_hd__or3b_2 (1)                
+sky130_fd_sc_hd__xor2_2 (6)                |sky130_fd_sc_hd__xor2_2 (6)                
+sky130_fd_sc_hd__o21bai_2 (1)              |sky130_fd_sc_hd__o21bai_2 (1)              
+sky130_fd_sc_hd__o311ai_1 (2)              |sky130_fd_sc_hd__o311ai_1 (2)              
+sky130_fd_sc_hd__o2bb2ai_1 (1)             |sky130_fd_sc_hd__o2bb2ai_1 (1)             
+sky130_fd_sc_hd__o32ai_1 (1)               |sky130_fd_sc_hd__o32ai_1 (1)               
+sky130_fd_sc_hd__nor3b_1 (6)               |sky130_fd_sc_hd__nor3b_1 (6)               
+sky130_fd_sc_hd__nor2_4 (1)                |sky130_fd_sc_hd__nor2_4 (1)                
+sky130_fd_sc_hd__dfstp_2 (1)               |sky130_fd_sc_hd__dfstp_2 (1)               
+sky130_fd_sc_hd__ha_2 (1)                  |sky130_fd_sc_hd__ha_2 (1)                  
+sky130_fd_sc_hd__buf_12 (1)                |sky130_fd_sc_hd__buf_12 (1)                
+sky130_fd_sc_hd__xnor2_4 (1)               |sky130_fd_sc_hd__xnor2_4 (1)               
+sky130_fd_sc_hd__nor4_1 (8)                |sky130_fd_sc_hd__nor4_1 (8)                
+sky130_fd_sc_hd__a2bb2oi_1 (2)             |sky130_fd_sc_hd__a2bb2oi_1 (2)             
+sky130_fd_sc_hd__dfrtp_2 (1)               |sky130_fd_sc_hd__dfrtp_2 (1)               
+sky130_fd_sc_hd__a211oi_1 (46)             |sky130_fd_sc_hd__a211oi_1 (46)             
+sky130_fd_sc_hd__a22oi_1 (1)               |sky130_fd_sc_hd__a22oi_1 (1)               
+sky130_fd_sc_hd__and4_1 (7)                |sky130_fd_sc_hd__and4_1 (7)                
+sky130_fd_sc_hd__o211a_1 (9)               |sky130_fd_sc_hd__o211a_1 (9)               
+sky130_fd_sc_hd__nor2_2 (10)               |sky130_fd_sc_hd__nor2_2 (10)               
+sky130_fd_sc_hd__and2_2 (2)                |sky130_fd_sc_hd__and2_2 (2)                
+sky130_fd_sc_hd__nor4b_2 (2)               |sky130_fd_sc_hd__nor4b_2 (2)               
+sky130_fd_sc_hd__o41ai_1 (5)               |sky130_fd_sc_hd__o41ai_1 (5)               
+sky130_fd_sc_hd__and2_0 (3)                |sky130_fd_sc_hd__and2_0 (3)                
+sky130_fd_sc_hd__a221oi_1 (5)              |sky130_fd_sc_hd__a221oi_1 (5)              
+sky130_fd_sc_hd__o22ai_2 (2)               |sky130_fd_sc_hd__o22ai_2 (2)               
+sky130_fd_sc_hd__mux2i_1 (2)               |sky130_fd_sc_hd__mux2i_1 (2)               
+sky130_fd_sc_hd__o311a_1 (1)               |sky130_fd_sc_hd__o311a_1 (1)               
+sky130_fd_sc_hd__o21ai_2 (2)               |sky130_fd_sc_hd__o21ai_2 (2)               
+sky130_fd_sc_hd__o22a_1 (2)                |sky130_fd_sc_hd__o22a_1 (2)                
+sky130_fd_sc_hd__and4b_1 (1)               |sky130_fd_sc_hd__and4b_1 (1)               
+sky130_fd_sc_hd__a2111oi_2 (2)             |sky130_fd_sc_hd__a2111oi_2 (2)             
+sky130_fd_sc_hd__a2111o_1 (3)              |sky130_fd_sc_hd__a2111o_1 (3)              
+sky130_fd_sc_hd__a221o_1 (4)               |sky130_fd_sc_hd__a221o_1 (4)               
+sky130_fd_sc_hd__o221ai_1 (1)              |sky130_fd_sc_hd__o221ai_1 (1)              
+sky130_fd_sc_hd__nand3_2 (1)               |sky130_fd_sc_hd__nand3_2 (1)               
+sky130_fd_sc_hd__o21ba_2 (2)               |sky130_fd_sc_hd__o21ba_2 (2)               
+sky130_fd_sc_hd__o31ai_2 (1)               |sky130_fd_sc_hd__o31ai_2 (1)               
+Number of devices: 29453                   |Number of devices: 29453                   
+Number of nets: 38236                      |Number of nets: 38236                      
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: mm_accel                        |Circuit 2: mm_accel                        
+-------------------------------------------|-------------------------------------------
+raddr[0]                                   |raddr[0]                                   
+wdata[12]                                  |wdata[12]                                  
+raddr[1]                                   |raddr[1]                                   
+raddr[2]                                   |raddr[2]                                   
+wdata[25]                                  |wdata[25]                                  
+wdata[29]                                  |wdata[29]                                  
+wdata[31]                                  |wdata[31]                                  
+wdata[5]                                   |wdata[5]                                   
+raddr[3]                                   |raddr[3]                                   
+we_b                                       |we_b                                       
+we_a                                       |we_a                                       
+rst_n                                      |rst_n                                      
+waddr[0]                                   |waddr[0]                                   
+start                                      |start                                      
+waddr[3]                                   |waddr[3]                                   
+waddr[1]                                   |waddr[1]                                   
+busy                                       |busy                                       
+done                                       |done                                       
+rdata[19]                                  |rdata[19]                                  
+rdata[1]                                   |rdata[1]                                   
+rdata[0]                                   |rdata[0]                                   
+rdata[29]                                  |rdata[29]                                  
+rdata[27]                                  |rdata[27]                                  
+rdata[26]                                  |rdata[26]                                  
+rdata[28]                                  |rdata[28]                                  
+rdata[25]                                  |rdata[25]                                  
+rdata[31]                                  |rdata[31]                                  
+rdata[30]                                  |rdata[30]                                  
+rdata[11]                                  |rdata[11]                                  
+rdata[16]                                  |rdata[16]                                  
+rdata[14]                                  |rdata[14]                                  
+rdata[17]                                  |rdata[17]                                  
+rdata[15]                                  |rdata[15]                                  
+rdata[18]                                  |rdata[18]                                  
+rdata[23]                                  |rdata[23]                                  
+rdata[24]                                  |rdata[24]                                  
+rdata[20]                                  |rdata[20]                                  
+rdata[21]                                  |rdata[21]                                  
+rdata[22]                                  |rdata[22]                                  
+rdata[2]                                   |rdata[2]                                   
+rdata[3]                                   |rdata[3]                                   
+rdata[13]                                  |rdata[13]                                  
+rdata[10]                                  |rdata[10]                                  
+rdata[6]                                   |rdata[6]                                   
+rdata[12]                                  |rdata[12]                                  
+rdata[5]                                   |rdata[5]                                   
+rdata[9]                                   |rdata[9]                                   
+rdata[4]                                   |rdata[4]                                   
+rdata[8]                                   |rdata[8]                                   
+rdata[7]                                   |rdata[7]                                   
+wdata[9]                                   |wdata[9]                                   
+wdata[27]                                  |wdata[27]                                  
+wdata[30]                                  |wdata[30]                                  
+wdata[17]                                  |wdata[17]                                  
+wdata[26]                                  |wdata[26]                                  
+wdata[18]                                  |wdata[18]                                  
+wdata[14]                                  |wdata[14]                                  
+wdata[19]                                  |wdata[19]                                  
+wdata[13]                                  |wdata[13]                                  
+wdata[10]                                  |wdata[10]                                  
+wdata[0]                                   |wdata[0]                                   
+waddr[2]                                   |waddr[2]                                   
+clk                                        |clk                                        
+wdata[16]                                  |wdata[16]                                  
+wdata[2]                                   |wdata[2]                                   
+wdata[24]                                  |wdata[24]                                  
+wdata[21]                                  |wdata[21]                                  
+wdata[23]                                  |wdata[23]                                  
+wdata[28]                                  |wdata[28]                                  
+wdata[22]                                  |wdata[22]                                  
+wdata[8]                                   |wdata[8]                                   
+wdata[4]                                   |wdata[4]                                   
+wdata[1]                                   |wdata[1]                                   
+wdata[20]                                  |wdata[20]                                  
+wdata[15]                                  |wdata[15]                                  
+wdata[3]                                   |wdata[3]                                   
+wdata[11]                                  |wdata[11]                                  
+wdata[6]                                   |wdata[6]                                   
+wdata[7]                                   |wdata[7]                                   
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes mm_accel and mm_accel are equivalent.
+
+Final result: Circuits match uniquely.
+.

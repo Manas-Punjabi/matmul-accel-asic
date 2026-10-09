@@ -1,0 +1,81 @@
+# Final metrics of the base run as written by OpenROAD-flow-scripts 26Q3-589, run 2026-09-19.
+# Copied verbatim from the flow’s 6_report.json (all keys) and 5_2_route.json (detailed-route
+# DRC and antenna keys). Units: area um^2, power W, time ns, frequency Hz.
+#
+# --- final report (6_report.json)
+finish__design_powergrid__voltage__worst__net:VDD__corner:default = 1.79985
+finish__design_powergrid__voltage__average__net:VDD__corner:default = 1.8
+finish__design_powergrid__drop__average__net:VDD__corner:default = 4.34929e-06
+finish__design_powergrid__drop__worst__net:VDD__corner:default = 0.000152119
+finish__design_powergrid__voltage__worst__net:VSS__corner:default = 0.000170569
+finish__design_powergrid__voltage__average__net:VSS__corner:default = 4.49114e-06
+finish__design_powergrid__drop__average__net:VSS__corner:default = 4.49114e-06
+finish__design_powergrid__drop__worst__net:VSS__corner:default = 0.000170569
+finish__design__instance__count__class:fill_cell = 92407
+finish__design__instance__area__class:fill_cell = 603981
+finish__design__instance__count__class:tap_cell = 12922
+finish__design__instance__area__class:tap_cell = 16168
+finish__design__instance__count__class:antenna_cell = 417
+finish__design__instance__area__class:antenna_cell = 1043.5
+finish__design__instance__count__class:clock_buffer = 449
+finish__design__instance__area__class:clock_buffer = 9320.19
+finish__design__instance__count__class:timing_repair_buffer = 790
+finish__design__instance__area__class:timing_repair_buffer = 4695.75
+finish__design__instance__count__class:inverter = 135
+finish__design__instance__area__class:inverter = 506.736
+finish__design__instance__count__class:clock_inverter = 174
+finish__design__instance__area__class:clock_inverter = 2233.39
+finish__design__instance__count__class:sequential_cell = 2837
+finish__design__instance__area__class:sequential_cell = 72313.1
+finish__design__instance__count__class:multi_input_combinational_cell = 24926
+finish__design__instance__area__class:multi_input_combinational_cell = 262642
+finish__design__instance__count = 135057
+finish__design__instance__area = 368923
+finish__timing__setup__tns = 0
+finish__timing__hold__tns = 0
+finish__timing__setup__ws = 3.16138
+finish__timing__hold__ws = 0.0321349
+finish__timing__fmax__clock:core_clock = 113140000.0
+finish__timing__fmax = 113140000.0
+finish__clock__skew__setup = 0.3656
+finish__clock__skew__hold = 0.365473
+finish__timing__drv__max_slew_limit = 0.180095
+finish__timing__drv__max_slew = 0
+finish__timing__drv__max_cap_limit = 0.256115
+finish__timing__drv__max_cap = 0
+finish__timing__drv__max_fanout_limit = 0
+finish__timing__drv__max_fanout = 0
+finish__timing__drv__setup_violation_count = 0
+finish__timing__drv__hold_violation_count = 0
+finish__power__internal__total = 0.0164126
+finish__power__switching__total = 0.00511278
+finish__power__leakage__total = 1.5128e-07
+finish__power__total = 0.0215255
+finish__design__io = 81
+finish__design__nets = 37945
+finish__design__die__area = 981477
+finish__design__core__area = 972903
+finish__design__instance__count__stdcell = 42650
+finish__design__instance__area__stdcell = 368923
+finish__design__instance__count__macros = 0
+finish__design__instance__area__macros = 0
+finish__design__instance__count__padcells = 0
+finish__design__instance__area__padcells = 0
+finish__design__instance__count__cover = 0
+finish__design__instance__area__cover = 0
+finish__design__instance__utilization = 0.379198
+finish__design__instance__utilization__stdcell = 0.379198
+finish__design__rows = 362
+finish__design__rows:unithd = 362
+finish__design__sites = 777576
+finish__design__sites:unithd = 777576
+finish__flow__warnings__count = 1
+finish__flow__errors__count = 0
+finish__flow__warnings__count:GUI-0076 = 1
+finish__flow__warnings__type_count = 1
+#
+# --- detailed route (5_2_route.json)
+detailedroute__route__drc_errors = 0
+detailedroute__antenna__violating__nets = 0
+detailedroute__antenna__violating__pins = 0
+detailedroute__antenna_diodes_count = 129

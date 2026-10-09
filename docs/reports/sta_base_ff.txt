@@ -1,0 +1,346 @@
+# Static timing analysis (OpenSTA), fast corner ff_n40C_1v95, run 2026-09-19.
+# Inputs: the routed gate netlist, extracted parasitics and constraints of the base run.
+# 2,558 warnings were removed from this copy: the parasitics list the 417 antenna diodes the
+# router added, which the gate netlist omits. The typical-corner result matches the flow’s own.
+==== setup ====
+Startpoint: raddr[0] (input port clocked by core_clock)
+Endpoint: rdata[0] (output port clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock core_clock (rise edge)
+                     0.000    0.000   clock network delay (propagated)
+                     2.400    2.400 ^ input external delay
+   0.011    0.048    0.033    2.433 ^ raddr[0] (in)
+            0.048    0.000    2.433 ^ input1/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.065    0.487    0.478    2.911 ^ input1/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.487    0.007    2.918 ^ place1418/A (sky130_fd_sc_hd__buf_2)
+   0.220    0.792    0.622    3.539 ^ place1418/X (sky130_fd_sc_hd__buf_2)
+            0.793    0.026    3.566 ^ _53574_/S0 (sky130_fd_sc_hd__mux4_2)
+   0.006    0.066    0.324    3.890 v _53574_/X (sky130_fd_sc_hd__mux4_2)
+            0.066    0.000    3.890 v _53576_/A2 (sky130_fd_sc_hd__mux4_2)
+   0.027    0.107    0.332    4.222 v _53576_/X (sky130_fd_sc_hd__mux4_2)
+            0.107    0.002    4.224 v output47/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.031    0.160    0.292    4.517 v output47/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.160    0.003    4.520 v rdata[0] (out)
+                              4.520   data arrival time
+
+                    12.000   12.000   clock core_clock (rise edge)
+                     0.000   12.000   clock network delay (propagated)
+                    -0.250   11.750   clock uncertainty
+                     0.000   11.750   clock reconvergence pessimism
+                    -2.400    9.350   output external delay
+                              9.350   data required time
+---------------------------------------------------------------------------
+                              9.350   data required time
+                             -4.520   data arrival time
+---------------------------------------------------------------------------
+                              4.830   slack (MET)
+
+
+Startpoint: raddr[0] (input port clocked by core_clock)
+Endpoint: rdata[1] (output port clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock core_clock (rise edge)
+                     0.000    0.000   clock network delay (propagated)
+                     2.400    2.400 ^ input external delay
+   0.011    0.048    0.033    2.433 ^ raddr[0] (in)
+            0.048    0.000    2.433 ^ input1/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.065    0.487    0.478    2.911 ^ input1/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.487    0.007    2.918 ^ place1418/A (sky130_fd_sc_hd__buf_2)
+   0.220    0.792    0.622    3.539 ^ place1418/X (sky130_fd_sc_hd__buf_2)
+            0.792    0.016    3.556 ^ _53570_/S0 (sky130_fd_sc_hd__mux4_2)
+   0.003    0.056    0.309    3.864 v _53570_/X (sky130_fd_sc_hd__mux4_2)
+            0.056    0.000    3.865 v _53571_/A3 (sky130_fd_sc_hd__mux4_2)
+   0.023    0.099    0.326    4.191 v _53571_/X (sky130_fd_sc_hd__mux4_2)
+            0.099    0.001    4.192 v output58/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.039    0.198    0.317    4.509 v output58/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.198    0.005    4.514 v rdata[1] (out)
+                              4.514   data arrival time
+
+                    12.000   12.000   clock core_clock (rise edge)
+                     0.000   12.000   clock network delay (propagated)
+                    -0.250   11.750   clock uncertainty
+                     0.000   11.750   clock reconvergence pessimism
+                    -2.400    9.350   output external delay
+                              9.350   data required time
+---------------------------------------------------------------------------
+                              9.350   data required time
+                             -4.514   data arrival time
+---------------------------------------------------------------------------
+                              4.836   slack (MET)
+
+
+Startpoint: raddr[0] (input port clocked by core_clock)
+Endpoint: rdata[31] (output port clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock core_clock (rise edge)
+                     0.000    0.000   clock network delay (propagated)
+                     2.400    2.400 ^ input external delay
+   0.011    0.048    0.033    2.433 ^ raddr[0] (in)
+            0.048    0.000    2.433 ^ input1/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.065    0.487    0.478    2.911 ^ input1/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.487    0.007    2.918 ^ place1418/A (sky130_fd_sc_hd__buf_2)
+   0.220    0.792    0.622    3.539 ^ place1418/X (sky130_fd_sc_hd__buf_2)
+            0.794    0.030    3.570 ^ _53602_/S0 (sky130_fd_sc_hd__mux4_2)
+   0.007    0.069    0.328    3.897 v _53602_/X (sky130_fd_sc_hd__mux4_2)
+            0.069    0.000    3.898 v _53604_/A2 (sky130_fd_sc_hd__mux4_2)
+   0.028    0.108    0.333    4.231 v _53604_/X (sky130_fd_sc_hd__mux4_2)
+            0.108    0.004    4.235 v output71/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.025    0.131    0.271    4.506 v output71/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.131    0.001    4.508 v rdata[31] (out)
+                              4.508   data arrival time
+
+                    12.000   12.000   clock core_clock (rise edge)
+                     0.000   12.000   clock network delay (propagated)
+                    -0.250   11.750   clock uncertainty
+                     0.000   11.750   clock reconvergence pessimism
+                    -2.400    9.350   output external delay
+                              9.350   data required time
+---------------------------------------------------------------------------
+                              9.350   data required time
+                             -4.508   data arrival time
+---------------------------------------------------------------------------
+                              4.842   slack (MET)
+
+
+Startpoint: raddr[0] (input port clocked by core_clock)
+Endpoint: rdata[30] (output port clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock core_clock (rise edge)
+                     0.000    0.000   clock network delay (propagated)
+                     2.400    2.400 ^ input external delay
+   0.011    0.048    0.033    2.433 ^ raddr[0] (in)
+            0.048    0.000    2.433 ^ input1/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.065    0.487    0.478    2.911 ^ input1/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.487    0.007    2.918 ^ place1418/A (sky130_fd_sc_hd__buf_2)
+   0.220    0.792    0.622    3.539 ^ place1418/X (sky130_fd_sc_hd__buf_2)
+            0.794    0.032    3.571 ^ _53397_/S0 (sky130_fd_sc_hd__mux4_2)
+   0.005    0.063    0.318    3.889 v _53397_/X (sky130_fd_sc_hd__mux4_2)
+            0.063    0.000    3.889 v _53406_/A2 (sky130_fd_sc_hd__mux4_2)
+   0.031    0.115    0.340    4.229 v _53406_/X (sky130_fd_sc_hd__mux4_2)
+            0.115    0.003    4.232 v output70/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.025    0.130    0.273    4.505 v output70/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.130    0.001    4.506 v rdata[30] (out)
+                              4.506   data arrival time
+
+                    12.000   12.000   clock core_clock (rise edge)
+                     0.000   12.000   clock network delay (propagated)
+                    -0.250   11.750   clock uncertainty
+                     0.000   11.750   clock reconvergence pessimism
+                    -2.400    9.350   output external delay
+                              9.350   data required time
+---------------------------------------------------------------------------
+                              9.350   data required time
+                             -4.506   data arrival time
+---------------------------------------------------------------------------
+                              4.844   slack (MET)
+
+
+Startpoint: raddr[0] (input port clocked by core_clock)
+Endpoint: rdata[19] (output port clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock core_clock (rise edge)
+                     0.000    0.000   clock network delay (propagated)
+                     2.400    2.400 ^ input external delay
+   0.011    0.048    0.033    2.433 ^ raddr[0] (in)
+            0.048    0.000    2.433 ^ input1/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.065    0.487    0.478    2.911 ^ input1/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.487    0.007    2.918 ^ place1418/A (sky130_fd_sc_hd__buf_2)
+   0.220    0.792    0.622    3.539 ^ place1418/X (sky130_fd_sc_hd__buf_2)
+            0.793    0.024    3.563 ^ _53469_/S0 (sky130_fd_sc_hd__mux4_2)
+   0.006    0.066    0.324    3.887 v _53469_/X (sky130_fd_sc_hd__mux4_2)
+            0.066    0.000    3.887 v _53471_/A2 (sky130_fd_sc_hd__mux4_2)
+   0.024    0.100    0.324    4.211 v _53471_/X (sky130_fd_sc_hd__mux4_2)
+            0.100    0.002    4.213 v output57/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+   0.030    0.155    0.286    4.499 v output57/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+            0.155    0.003    4.502 v rdata[19] (out)
+                              4.502   data arrival time
+
+                    12.000   12.000   clock core_clock (rise edge)
+                     0.000   12.000   clock network delay (propagated)
+                    -0.250   11.750   clock uncertainty
+                     0.000   11.750   clock reconvergence pessimism
+                    -2.400    9.350   output external delay
+                              9.350   data required time
+---------------------------------------------------------------------------
+                              9.350   data required time
+                             -4.502   data arrival time
+---------------------------------------------------------------------------
+                              4.848   slack (MET)
+
+
+==== hold ====
+Startpoint: mem_b[104]$_DFFE_PP_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: g_pe[3].u_pe.b_q[8]$_DFF_P_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clock (rise edge)
+   0.672    0.672   clock network delay (propagated)
+   0.000    0.672 ^ mem_b[104]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+   0.220    0.893 ^ mem_b[104]$_DFFE_PP_/Q (sky130_fd_sc_hd__edfxtp_1)
+   0.000    0.893 ^ g_pe[3].u_pe.b_q[8]$_DFF_P_/D (sky130_fd_sc_hd__dfxtp_1)
+            0.893   data arrival time
+
+   0.000    0.000   clock core_clock (rise edge)
+   0.736    0.736   clock network delay (propagated)
+   0.250    0.986   clock uncertainty
+   0.000    0.986   clock reconvergence pessimism
+            0.986 ^ g_pe[3].u_pe.b_q[8]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.019    0.968   library hold time
+            0.968   data required time
+-----------------------------------------------------------
+            0.968   data required time
+           -0.893   data arrival time
+-----------------------------------------------------------
+           -0.075   slack (VIOLATED)
+
+
+Startpoint: mem_b[99]$_DFFE_PP_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: g_pe[3].u_pe.b_q[3]$_DFF_P_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clock (rise edge)
+   0.686    0.686   clock network delay (propagated)
+   0.000    0.686 ^ mem_b[99]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+   0.223    0.909 ^ mem_b[99]$_DFFE_PP_/Q (sky130_fd_sc_hd__edfxtp_1)
+   0.000    0.909 ^ g_pe[3].u_pe.b_q[3]$_DFF_P_/D (sky130_fd_sc_hd__dfxtp_1)
+            0.909   data arrival time
+
+   0.000    0.000   clock core_clock (rise edge)
+   0.736    0.736   clock network delay (propagated)
+   0.250    0.986   clock uncertainty
+   0.000    0.986   clock reconvergence pessimism
+            0.986 ^ g_pe[3].u_pe.b_q[3]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.019    0.968   library hold time
+            0.968   data required time
+-----------------------------------------------------------
+            0.968   data required time
+           -0.909   data arrival time
+-----------------------------------------------------------
+           -0.059   slack (VIOLATED)
+
+
+Startpoint: tag_sr[0]$_DFF_P_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: tag_sr[3]$_DFF_P_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clock (rise edge)
+   0.711    0.711   clock network delay (propagated)
+   0.000    0.711 ^ tag_sr[0]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.187    0.899 ^ tag_sr[0]$_DFF_P_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.000    0.899 ^ tag_sr[3]$_DFF_P_/D (sky130_fd_sc_hd__dfxtp_1)
+            0.899   data arrival time
+
+   0.000    0.000   clock core_clock (rise edge)
+   0.713    0.713   clock network delay (propagated)
+   0.250    0.963   clock uncertainty
+   0.000    0.963   clock reconvergence pessimism
+            0.963 ^ tag_sr[3]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.017    0.947   library hold time
+            0.947   data required time
+-----------------------------------------------------------
+            0.947   data required time
+           -0.899   data arrival time
+-----------------------------------------------------------
+           -0.048   slack (VIOLATED)
+
+
+Startpoint: tag_sr[4]$_DFF_P_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: tag_sr[7]$_DFF_P_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clock (rise edge)
+   0.713    0.713   clock network delay (propagated)
+   0.000    0.713 ^ tag_sr[4]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.186    0.900 ^ tag_sr[4]$_DFF_P_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.000    0.900 ^ tag_sr[7]$_DFF_P_/D (sky130_fd_sc_hd__dfxtp_1)
+            0.900   data arrival time
+
+   0.000    0.000   clock core_clock (rise edge)
+   0.713    0.713   clock network delay (propagated)
+   0.250    0.963   clock uncertainty
+   0.000    0.963   clock reconvergence pessimism
+            0.963 ^ tag_sr[7]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.017    0.947   library hold time
+            0.947   data required time
+-----------------------------------------------------------
+            0.947   data required time
+           -0.900   data arrival time
+-----------------------------------------------------------
+           -0.047   slack (VIOLATED)
+
+
+Startpoint: tag_sr[1]$_DFF_P_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: tag_sr[4]$_DFF_P_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clock (rise edge)
+   0.717    0.717   clock network delay (propagated)
+   0.000    0.717 ^ tag_sr[1]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.187    0.905 ^ tag_sr[1]$_DFF_P_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.000    0.905 ^ tag_sr[4]$_DFF_P_/D (sky130_fd_sc_hd__dfxtp_1)
+            0.905   data arrival time
+
+   0.000    0.000   clock core_clock (rise edge)
+   0.713    0.713   clock network delay (propagated)
+   0.250    0.963   clock uncertainty
+   0.000    0.963   clock reconvergence pessimism
+            0.963 ^ tag_sr[4]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.017    0.947   library hold time
+            0.947   data required time
+-----------------------------------------------------------
+            0.947   data required time
+           -0.905   data arrival time
+-----------------------------------------------------------
+           -0.042   slack (VIOLATED)
+
+
+==== summary ====
+wns max 0.00
+tns max 0.00
+worst slack max 4.83
+worst slack min -0.07

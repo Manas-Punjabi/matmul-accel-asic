@@ -1,0 +1,6 @@
+# Magic 8.3.683 full DRC (drc(full), euclidean) on the routed GDS of the base run
+# PDK: sky130A c6d73a35 (volare). Run 2026-09-19.
+# Two standard cells, a2111oi_0 and buf_16, are excluded from synthesis because each fails
+# rule licon.8a inside its own layout; see docs/implementation.md.
+#
+# Result: No errors found.

@@ -1,0 +1,61 @@
+setup,date,change,variant,wns_ns,tns_ns,hold_ws_ns,cell_area_um2,util,power_mw,route_drc,drv_violator_lines
+A,2026-09-17,PDK default cell library,base,3.109,0,0.077,368974,0.3792,21.39,0,0
+A,2026-09-17,PDK default cell library,n4_dw32_s0_p10p0_u35,1.483,0,0.073,370140,0.3804,25.81,0,32
+A,2026-09-17,PDK default cell library,n4_dw32_s0_p12p0_u35,3.109,0,0.077,368974,0.3792,21.39,0,0
+A,2026-09-17,PDK default cell library,n4_dw32_s0_p6p0_u35,-1.284,-236.75,0.073,415864,0.4274,44.18,0,0
+A,2026-09-17,PDK default cell library,n4_dw32_s0_p7p0_u35,-0.318,-6.85,0.076,411772,0.4232,37.39,0,4
+A,2026-09-17,PDK default cell library,n4_dw32_s0_p8p0_u35,0.26,0,0.074,376500,0.387,32.61,0,12
+A,2026-09-17,PDK default cell library,n4_dw32_s1_p10p0_u35,1.902,0,0.016,393326,0.3817,32.06,0,61
+A,2026-09-17,PDK default cell library,n4_dw32_s1_p12p0_u35,3.219,0,0.02,392893,0.3813,26.6,0,64
+A,2026-09-17,PDK default cell library,n4_dw32_s1_p6p0_u35,-0.35,-21.27,0.037,430661,0.4179,54.06,0,61
+A,2026-09-17,PDK default cell library,n4_dw32_s1_p7p0_u35,0.202,0,0.023,400539,0.3887,46.86,0,3
+A,2026-09-17,PDK default cell library,n4_dw32_s1_p8p0_u35,0.288,0,0.046,395880,0.3842,40.53,0,102
+A,2026-09-17,PDK default cell library,p8,0.26,0,0.074,376500,0.387,32.61,0,12
+A,2026-09-17,PDK default cell library,p8_split,0.288,0,0.046,395880,0.3842,40.53,0,102
+A,2026-09-17,PDK default cell library,p8_split_d50,0.446,0,0.054,397097,0.3854,41.23,0,18
+A,2026-09-17,PDK default cell library,p8_split_u25,0.61,0,0.036,404748,0.2807,40.51,0,13
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),base,2.989,0,0.071,369745,0.38,21.59,0,7
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s0_p10p0_u35,1.122,0,0.031,371590,0.3819,26.19,0,51
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s0_p12p0_u35,2.989,0,0.071,369745,0.38,21.59,0,7
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s0_p6p0_u35,-1.408,-258.16,0.042,414274,0.4258,42.92,0,0
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s0_p7p0_u35,-0.288,-8.81,0.07,408217,0.4196,36.94,0,12
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s0_p8p0_u35,0.11,0,0.072,377996,0.3885,32.58,0,51
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s1_p10p0_u35,2.15,0,0.015,392282,0.3807,31.52,0,30
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s1_p12p0_u35,3.595,0,0.026,393175,0.3815,27.23,0,39
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s1_p6p0_u35,-0.424,-21.36,0.017,426982,0.4144,53.53,0,0
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s1_p7p0_u35,0.237,0,0.037,400006,0.3882,45.97,0,0
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),n4_dw32_s1_p8p0_u35,0.528,0,0.009,395691,0.384,40.54,0,31
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),p8,0.11,0,0.072,377996,0.3885,32.58,0,51
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),p8_split,0.528,0,0.009,395691,0.384,40.54,0,31
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),p8_split_d50,0.52,0,0.025,396303,0.3846,40.29,0,0
+B,2026-09-17/18,A + one cell excluded (a2111oi_0),p8_split_u25,0.693,0,0.055,404539,0.2806,40.08,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,base,3.19,0,0.071,369777,0.3801,21.53,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s0_p10p0_u35,1.319,0,0.049,371560,0.3819,25.88,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s0_p12p0_u35,3.19,0,0.071,369777,0.3801,21.53,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s0_p6p0_u35,-1.332,-240.27,0.074,414456,0.426,44.09,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s0_p7p0_u35,-0.356,-14.22,0.076,407512,0.4189,37.07,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s0_p8p0_u35,0.158,0,0.073,377990,0.3885,32.4,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s1_p10p0_u35,2.17,0,-0.001,392896,0.3813,31.8,0,4
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s1_p12p0_u35,3.615,0,0.041,393181,0.3816,26.98,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s1_p6p0_u35,-0.476,-27.07,0.016,422718,0.4102,53.16,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s1_p7p0_u35,0.241,0,0.038,400199,0.3884,45.98,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,n4_dw32_s1_p8p0_u35,0.531,0,0.024,395852,0.3841,40.41,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,p8,0.158,0,0.073,377990,0.3885,32.4,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,p8_split,0.531,0,0.024,395852,0.3841,40.41,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,p8_split_d50,0.424,0,0.029,396288,0.3846,40.11,0,0
+C,2026-09-18,B + 20 % slew and capacitance repair margin,p8_split_u25,0.644,0,0.041,404835,0.2808,40.16,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),base,3.161,0,0.032,368923,0.3792,21.53,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s0_p10p0_u35,1.008,0,0.076,369426,0.3797,25.68,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s0_p12p0_u35,3.161,0,0.032,368923,0.3792,21.53,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s0_p6p0_u35,-1.358,-246.62,0.076,401376,0.4126,43.0,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s0_p7p0_u35,-0.285,-7.5,0.065,398520,0.4096,36.49,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s0_p8p0_u35,0.183,0,0.075,375144,0.3856,32.52,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s1_p10p0_u35,2.013,0,0.009,393032,0.3814,32.64,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s1_p12p0_u35,3.874,0,0.028,392346,0.3807,26.89,0,11
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s1_p6p0_u35,-0.364,-20.52,0.046,420651,0.4082,53.46,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s1_p7p0_u35,0.183,0,0.016,397515,0.3858,45.79,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),n4_dw32_s1_p8p0_u35,0.286,0,0.039,393491,0.3819,39.84,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),p8,0.183,0,0.075,375144,0.3856,32.52,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),p8_split,0.286,0,0.039,393491,0.3819,39.84,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),p8_split_d50,0.283,0,0.019,395150,0.3835,40.66,0,0
+D,2026-09-19,C + buf_16 and unused exclude-list cells excluded (final),p8_split_u25,0.261,0,0.014,400321,0.2777,39.53,0,4
