@@ -1,0 +1,7 @@
+# simulation and synthesis outputs (make clean removes them)
+build/
+*.vcd
+__pycache__/
+
+# layout extraction intermediates
+*.ext
